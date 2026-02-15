@@ -14,7 +14,7 @@ Pause & Pray is a simple, offline app that displays prayer times.
 All prayer times are bundled within the app and are shown without requiring an account, internet access, or device permissions.
 
 ## Data Storage
-Pause & Pray does not store any user data, either locally or remotely.
+Pause & Pray stores basic user preferences locally on the device using system storage. This data never leaves the device and is not accessible to the developer or any third parties.
 
 ## Sharing of Information
 No data is shared with third parties because no data is collected.
