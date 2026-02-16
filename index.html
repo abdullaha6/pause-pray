@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pause & Pray - Prayer Times for Sri Lanka</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 600px;
+            text-align: center;
+        }
+        
+        .icon {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+        }
+        
+        h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+        
+        .subtitle {
+            font-size: 20px;
+            font-weight: 400;
+            opacity: 0.8;
+            margin-bottom: 40px;
+            line-height: 1.4;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin: 50px 0;
+            text-align: left;
+        }
+        
+        .feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .feature h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        
+        .feature p {
+            font-size: 14px;
+            opacity: 0.7;
+            line-height: 1.5;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background: white;
+            color: #1e3c72;
+            padding: 16px 40px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            margin-top: 30px;
+            transition: transform 0.2s;
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .links {
+            margin-top: 40px;
+            font-size: 14px;
+            opacity: 0.6;
+        }
+        
+        .links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .links a:hover {
+            opacity: 1;
+            border-bottom-color: white;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 32px;
+            }
+            
+            .subtitle {
+                font-size: 18px;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">🕌</div>
+        
+        <h1>Pause & Pray</h1>
+        <p class="subtitle">Accurate prayer times for all 27 districts in Sri Lanka</p>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>ACJU Verified</h3>
+                <p>100% accurate times you can trust</p>
+            </div>
+            
+            <div class="feature">
+                <h3>All Districts</h3>
+                <p>Every district in Sri Lanka covered</p>
+            </div>
+            
+            <div class="feature">
+                <h3>Widgets</h3>
+                <p>Lock screen & home screen widgets</p>
+            </div>
+            
+            <div class="feature">
+                <h3>Works Offline</h3>
+                <p>No internet connection needed</p>
+            </div>
+            
+            <div class="feature">
+                <h3>100% Free</h3>
+                <p>No ads, no subscriptions, ever</p>
+            </div>
+            
+            <div class="feature">
+                <h3>Private</h3>
+                <p>Zero data collection</p>
+            </div>
+        </div>
+        
+        <a href="https://apps.apple.com/app/your-app-id" class="download-btn">Download on App Store</a>
+        
+        <div class="links">
+            <a href="https://github.com/abdullaha6/pause-pray/blob/main/privacy-policy.md">Privacy Policy</a>
+            <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>
+            <a href="mailto:your-email@example.com">Support</a>
+        </div>
+    </div>
+</body>
+</html>
