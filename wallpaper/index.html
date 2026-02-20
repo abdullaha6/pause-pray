@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pause & Pray Wallpaper Generator</title>
+  <link rel="stylesheet" href="wallpaper.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <a class="back" href="../">← Back</a>
+      <div class="title">
+        <h1>Wallpaper Generator</h1>
+        <p>Create a blank wallpaper with today’s prayer times.</p>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section class="panel">
+        <h2>Options</h2>
+
+        <div class="field">
+          <label for="os">OS</label>
+          <select id="os">
+            <option value="ios">iOS</option>
+            <option value="android">Android</option>
+          </select>
+          <div class="hint">This sets the wallpaper size.</div>
+        </div>
+
+        <div class="field">
+          <label for="district">District</label>
+          <select id="district"></select>
+          <div class="hint">Dummy data for now. JSON wiring comes next.</div>
+        </div>
+
+        <div class="field">
+          <label for="size">Wallpaper size</label>
+          <select id="size"></select>
+          <div class="hint">Pick a preset per OS.</div>
+        </div>
+
+        <button id="generate" class="primary">Generate</button>
+
+        <div class="actions">
+          <a id="download" class="download disabled" href="#" download>Download PNG</a>
+          <button id="copyLink" class="secondary" disabled>Copy download link</button>
+        </div>
+
+        <div id="status" class="status" aria-live="polite"></div>
+      </section>
+
+      <section class="preview">
+        <div class="previewHeader">
+          <h2>Preview</h2>
+          <div class="meta" id="previewMeta"></div>
+        </div>
+
+        <div class="canvasShell">
+          <canvas id="canvas" width="1170" height="2532"></canvas>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="small">
+        Pause & Pray • Asia/Colombo • ACJU data (dummy for now)
+      </div>
+    </footer>
+  </div>
+
+  <script src="wallpaper.js"></script>
+</body>
+</html>
